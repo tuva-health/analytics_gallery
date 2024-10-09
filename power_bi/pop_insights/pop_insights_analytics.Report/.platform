@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "pop_insights_analytics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "776335f7-0fc7-4e27-b4fa-b7dbb034528f"
+  }
+}

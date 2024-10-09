@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "pop_insights_analytics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "52fd5ed4-9cf2-445b-9153-2810c0ef2964"
+  }
+}
