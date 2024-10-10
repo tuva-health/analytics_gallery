@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "qm_analytics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cdb14519-0808-4066-8f44-a88b32b60d47"
+  }
+}
