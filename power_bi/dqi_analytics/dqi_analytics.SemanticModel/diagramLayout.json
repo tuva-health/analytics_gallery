@@ -1,0 +1,435 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 1106,
+        "y": 28594
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1540.8095238095241,
+            "y": 30791.420227249597
+          },
+          "nodeIndex": "MeasureTable",
+          "nodeLineageTag": "229dd34c-e893-4d54-8fcf-761a54d3f783",
+          "size": {
+            "height": 567.14285714285722,
+            "width": 234
+          },
+          "zIndex": 28
+        },
+        {
+          "location": {
+            "x": 825.71428571428612,
+            "y": 30755.1821320115
+          },
+          "nodeIndex": "DateTable",
+          "nodeLineageTag": "dcf7318d-54b5-43de-811b-0947a768feaf",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 29,
+          "expandedHeight": 240
+        },
+        {
+          "location": {
+            "x": 1298.8690476190479,
+            "y": 30436.386187071024
+          },
+          "nodeIndex": "MeasureTableMarts",
+          "nodeLineageTag": "5bfd9414-7eab-4055-a986-c458306583ef",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 27
+        },
+        {
+          "location": {
+            "x": 2036.2261904761908,
+            "y": 31486.267930002574
+          },
+          "nodeIndex": "Data Sources",
+          "nodeLineageTag": "e6d258db-e726-4cda-8d2a-03c6c6fae6ce",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 26
+        },
+        {
+          "location": {
+            "x": 2780.3206088122342,
+            "y": 30264.07461400604
+          },
+          "nodeIndex": "month calendar table",
+          "nodeLineageTag": "5d8493be-dd58-4ade-87af-2cb8c32c25cc",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1,
+          "expandedHeight": 128
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 30798.818664749597
+          },
+          "nodeIndex": "DQI claim_type_summary",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 3580.9306690623139,
+            "y": 29684.753725570004
+          },
+          "nodeIndex": "Mart claims with enrollment",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3,
+          "expandedHeight": 200
+        },
+        {
+          "location": {
+            "x": 3100.2619047619046,
+            "y": 31623.520724012335
+          },
+          "nodeIndex": "Mart CMSHCC Risk Factors",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 764.80952380952453,
+            "y": 31621.508024868643
+          },
+          "nodeIndex": "DQI Crosswalk Field to Mart SK",
+          "size": {
+            "height": 340,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1279.6825396825398,
+            "y": 31492.195028836897
+          },
+          "nodeIndex": "DQI Crosswalk Mart to Outcome Measure",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 389.82142857142867,
+            "y": 31006.1821320115
+          },
+          "nodeIndex": "DQI Data Quality for PBI",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 4125.6904761904771,
+            "y": 30191.556823565978
+          },
+          "nodeIndex": "Mart ED Classification",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 8,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 1954.1190476190482,
+            "y": 31157.960312815074
+          },
+          "nodeIndex": "Mart enrollment_change_MoM",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 3557.6904761904766,
+            "y": 30681.540557333534
+          },
+          "nodeIndex": "Mart inpatient",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 10,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 4381.97619047619,
+            "y": 31064.851897790093
+          },
+          "nodeIndex": "Mart Measure Dictionary",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 2556.6904761904766,
+            "y": 31630.317455672215
+          },
+          "nodeIndex": "Mart member months",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 4193.9761904761908,
+            "y": 29871.881693492462
+          },
+          "nodeIndex": "Mart members with claims",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 13,
+          "expandedHeight": 200
+        },
+        {
+          "location": {
+            "x": 2666.5476190476193,
+            "y": 30773.687052607667
+          },
+          "nodeIndex": "Mart NumberofConditions",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 31
+        },
+        {
+          "location": {
+            "x": 2653.1904761904766,
+            "y": 31263.145185396919
+          },
+          "nodeIndex": "Mart patient",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 14,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 3273.6904761904766,
+            "y": 30858.485597355157
+          },
+          "nodeIndex": "Mart patient risk scores",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 15
+        },
+        {
+          "location": {
+            "x": 2311.9404761904766,
+            "y": 30807.567455672215
+          },
+          "nodeIndex": "Mart pmpm",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 16,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 3792.2619047619046,
+            "y": 31027.611901186181
+          },
+          "nodeIndex": "Mart quality meaures long",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 17
+        },
+        {
+          "location": {
+            "x": 325.71428571428578,
+            "y": 31695.003560582929
+          },
+          "nodeIndex": "DQI quality_trend",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 18
+        },
+        {
+          "location": {
+            "x": 3263.1190476190482,
+            "y": 30365.694425872527
+          },
+          "nodeIndex": "Mart readmissions",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 19
+        },
+        {
+          "location": {
+            "x": 101.60714285714289,
+            "y": 31203.717846297215
+          },
+          "nodeIndex": "DQI Summary",
+          "size": {
+            "height": 414.66666666666652,
+            "width": 234
+          },
+          "zIndex": 20
+        },
+        {
+          "location": {
+            "x": 2989.6904761904766,
+            "y": 31135.81565368189
+          },
+          "nodeIndex": "Mart tuva chronic conditions",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 21
+        },
+        {
+          "location": {
+            "x": 1678.6428571428569,
+            "y": 31704.3354295591
+          },
+          "nodeIndex": "Mart pharmacy",
+          "nodeLineageTag": "32e3aee3-49bf-42c2-b04d-070b65dba9ef",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 22,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 4665.97619047619,
+            "y": 25812.93770672899
+          },
+          "nodeIndex": "Mart patient risk",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 23
+        },
+        {
+          "location": {
+            "x": 4949.97619047619,
+            "y": 25311.749131904329
+          },
+          "nodeIndex": "NewMeasuresBrad",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 24
+        },
+        {
+          "location": {
+            "x": 5233.97619047619,
+            "y": 23774.606552369416
+          },
+          "nodeIndex": "Mart PQIs",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 25
+        },
+        {
+          "location": {
+            "x": 3951.97619047619,
+            "y": 29429.166829128335
+          },
+          "nodeIndex": "Mart genericavailable",
+          "nodeLineageTag": "30c28e2b-8f91-4b8e-99df-403127f1a66d",
+          "size": {
+            "height": 410,
+            "width": 234
+          },
+          "zIndex": 30
+        },
+        {
+          "location": {
+            "x": 5517.97619047619,
+            "y": 15323.553754764967
+          },
+          "nodeIndex": "zzMeasuresNew",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5801.97619047619,
+            "y": 13326.828386640162
+          },
+          "nodeIndex": "Mart service categories long",
+          "nodeLineageTag": "8825bd5d-0c28-4ed7-a7f2-cdc30d300d0d",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 50,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
