@@ -11,6 +11,7 @@ This repository currently includes Power BI .pbip files that are displayed in th
 1. Clone this repository or download the .pbip files directly.
 2. Ensure you have [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) installed on your computer.
 3. Open the .pbip files using Power BI Desktop to explore the dashboards and their underlying structure.
+4. Change the parameter **load_data** to true and update the rest of the parameters with your database and account information
 
 ## Contributing
 
