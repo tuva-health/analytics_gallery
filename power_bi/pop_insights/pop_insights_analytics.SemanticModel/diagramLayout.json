@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 838,
-        "y": 57298
+        "x": 902,
+        "y": 57412
       },
       "nodes": [
         {
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 825.71428571428612,
-            "y": 58297.901524936882
+            "x": 895.714285714286,
+            "y": 58247.901524936882
           },
           "nodeIndex": "DateTable",
           "nodeLineageTag": "dcf7318d-54b5-43de-811b-0947a768feaf",
@@ -63,8 +63,8 @@
         },
         {
           "location": {
-            "x": 2780.3206088122342,
-            "y": 57806.794006931421
+            "x": 1330.3206088122342,
+            "y": 57700.794006931421
           },
           "nodeIndex": "month calendar table",
           "nodeLineageTag": "5d8493be-dd58-4ade-87af-2cb8c32c25cc",
@@ -74,18 +74,6 @@
           },
           "zIndex": 1,
           "expandedHeight": 128
-        },
-        {
-          "location": {
-            "x": 0,
-            "y": 58341.538057674989
-          },
-          "nodeIndex": "DQI claim_type_summary",
-          "size": {
-            "height": 152,
-            "width": 234
-          },
-          "zIndex": 2
         },
         {
           "location": {
@@ -111,42 +99,6 @@
             "width": 234
           },
           "zIndex": 4
-        },
-        {
-          "location": {
-            "x": 764.80952380952453,
-            "y": 59164.227417794027
-          },
-          "nodeIndex": "DQI Crosswalk Field to Mart SK",
-          "size": {
-            "height": 340,
-            "width": 234
-          },
-          "zIndex": 5
-        },
-        {
-          "location": {
-            "x": 1279.6825396825398,
-            "y": 59034.914421762282
-          },
-          "nodeIndex": "DQI Crosswalk Mart to Outcome Measure",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 6
-        },
-        {
-          "location": {
-            "x": 389.82142857142867,
-            "y": 58548.901524936882
-          },
-          "nodeIndex": "DQI Data Quality for PBI",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 7
         },
         {
           "location": {
@@ -288,18 +240,6 @@
         },
         {
           "location": {
-            "x": 325.71428571428578,
-            "y": 59237.722953508317
-          },
-          "nodeIndex": "DQI quality_trend",
-          "size": {
-            "height": 248,
-            "width": 234
-          },
-          "zIndex": 18
-        },
-        {
-          "location": {
             "x": 3263.1190476190482,
             "y": 57908.413818797912
           },
@@ -309,18 +249,6 @@
             "width": 234
           },
           "zIndex": 19
-        },
-        {
-          "location": {
-            "x": 101.60714285714289,
-            "y": 58746.437239222607
-          },
-          "nodeIndex": "DQI Summary",
-          "size": {
-            "height": 414.66666666666652,
-            "width": 234
-          },
-          "zIndex": 20
         },
         {
           "location": {
@@ -362,18 +290,6 @@
         },
         {
           "location": {
-            "x": 4949.97619047619,
-            "y": 52854.468524829717
-          },
-          "nodeIndex": "NewMeasuresBrad",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 24
-        },
-        {
-          "location": {
             "x": 5233.97619047619,
             "y": 51317.3259452948
           },
@@ -396,18 +312,6 @@
             "width": 234
           },
           "zIndex": 30
-        },
-        {
-          "location": {
-            "x": 5517.97619047619,
-            "y": 42866.273147690357
-          },
-          "nodeIndex": "zzMeasuresNew",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 0
         },
         {
           "location": {
