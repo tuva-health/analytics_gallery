@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.137.952.0 (24.10)"
+        "value": "2.137.1102.0 (24.10)"
       },
       {
         "name": "PBI_ProTooling",
@@ -10886,7 +10886,7 @@
             "value": "Navigation"
           }
         ],
-        "expression": "\"db\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "expression": "\"database\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
         "kind": "m",
         "lineageTag": "4d63fe9a-ef00-4b08-b015-95c286f1292c"
       },
@@ -10960,9 +10960,13 @@
           {
             "name": "PBI_ResultType",
             "value": "Text"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
-        "expression": "\"snowflake\" meta [IsParameterQuery=true, List={\"snowflake\", \"ODBC\", \"bigquery\", \"redshift\"}, DefaultValue=\"snowflake\", Type=\"Any\", IsParameterQueryRequired=true]",
+        "expression": "\"Fabric\" meta [IsParameterQuery=true, List={\"snowflake\", \"ODBC\", \"bigquery\", \"redshift\", \"Fabric\"}, DefaultValue=\"snowflake\", Type=\"Any\", IsParameterQueryRequired=true]",
         "kind": "m",
         "lineageTag": "4fc385fa-8287-4bb1-a0d8-69393037463b"
       },
@@ -10980,7 +10984,7 @@
         ],
         "expression": [
           "let",
-          "    ConnectToDatabase = (data_warehouse_type as text, sql_query as text, server_name as text, database_name as text, role_name as text, compute_name as text) =>",
+          "    ConnectToDatabase = (data_warehouse_type as text, sql_query as text, server_name as text, database_name as text, optional role_name as nullable text, optional compute_name as nullable text) =>",
           "    let",
           "        ConnectionString = if data_warehouse_type = \"ODBC\" then \"dsn=\" & server_name else null,",
           "        DatabaseConnection = if data_warehouse_type = \"snowflake\" then ",
@@ -10995,13 +10999,21 @@
           "            ){[Name=database_name]}[Data]",
           "        else if data_warehouse_type = \"ODBC\" then ",
           "            ConnectionString",
+          "        else if data_warehouse_type = \"Fabric\" then",
+          "            Sql.Database(",
+          "                server_name & \".datawarehouse.fabric.microsoft.com\",",
+          "                database_name,",
+          "                [Query=sql_query]",
+          "            )",
           "        else",
-          "            error \"Unsupported database type. Supported types: Snowflake, SQLServer, ODBC\",",
+          "            error \"Unsupported database type. Supported types: Snowflake, SQLServer, ODBC, Fabric\",",
           "",
           "        Source = if data_warehouse_type = \"ODBC\" then",
           "            Odbc.Query(ConnectionString, sql_query)",
-          "        else if data_warehouse_type = \"snowflake\" or data_warehouse_type = \"SQLServer\" then",
+          "        else if data_warehouse_type = \"snowflake\" then",
           "            Value.NativeQuery(DatabaseConnection, sql_query, null, [EnableFolding=true])",
+          "        else if data_warehouse_type = \"Fabric\" then",
+          "            DatabaseConnection",
           "        else",
           "            DatabaseConnection",
           "    in",
@@ -11050,6 +11062,13 @@
         "toCardinality": "many",
         "toColumn": "TABLE_CLAIM_TYPE_FIELD_SK",
         "toTable": "DQI Crosswalk Field to Mart SK"
+      },
+      {
+        "name": "e8dba298-cefb-0a08-5f19-db85fa558620",
+        "fromColumn": "FIRST_DAY_OF_MONTH",
+        "fromTable": "DQI quality_trend",
+        "toColumn": "Date",
+        "toTable": "DateTable"
       }
     ],
     "sourceQueryCulture": "en-US",
@@ -11509,7 +11528,7 @@
             "isNameInferred": true,
             "lineageTag": "9eda6a71-57eb-4f8a-af9d-b5a61ba3f1d4",
             "sourceColumn": "[Year]",
-            "summarizeBy": "sum",
+            "summarizeBy": "none",
             "type": "calculatedTableColumn"
           },
           {
@@ -11600,6 +11619,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Exception"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -11785,7 +11808,11 @@
         "annotations": [
           {
             "name": "PBI_ResultType",
-            "value": "Table"
+            "value": "Exception"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -12023,6 +12050,19 @@
             "summarizeBy": "none"
           },
           {
+            "name": "FIRST_DAY_OF_MONTH",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "efbc167e-6742-45ed-8f09-6fef3d838590",
+            "sourceColumn": "FIRST_DAY_OF_MONTH",
+            "summarizeBy": "none"
+          },
+          {
             "name": "SOURCE_DATE",
             "annotations": [
               {
@@ -12031,21 +12071,8 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "5946272a-3aaf-4b22-9537-110c14e58ef3",
+            "lineageTag": "cbed2521-d657-472b-9f89-5847d5a67836",
             "sourceColumn": "SOURCE_DATE",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "FIRST_DATE_OF_MONTH",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ee0c7b6a-fa9b-4219-951b-1f6d9aa56bce",
-            "sourceColumn": "FIRST_DATE_OF_MONTH",
             "summarizeBy": "none"
           }
         ],
@@ -12064,7 +12091,7 @@
                 "    DatabaseConnection = data_warehouse_type_function(data_warehouse_type, sql_query, server_name, database_name, role_name, compute_name),",
                 "",
                 "    Source = if load_data then DatabaseConnection",
-                "    else #table({\"SOURCE_DATE\",\"SUMMARY_SK\",\"VALID_NUM\",\"FILL_NUM\",\"DENOM\",\"FIRST_DATE_OF_MONTH\"}, {}),",
+                "    else #table({\"SOURCE_DATE\",\"SUMMARY_SK\",\"VALID_NUM\",\"FILL_NUM\",\"DENOM\",\"FIRST_DAY_OF_MONTH\"}, {}),",
                 "",
                 "    // Rename columns to uppercase",
                 "    RenamedColumns = ",
@@ -12088,6 +12115,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Exception"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -12155,7 +12186,7 @@
                 "    schema_input = \"data_quality\",",
                 "    schema_prepend = if schema_prepend_name = \"NULL\" then schema_input",
                 "                     else \"\"\"\" & schema_prepend_name & schema_input & \"\"\"\" ,",
-                "    sql_query = \"SELECT * FROM \" & database_name & \".\" & schema_prepend & \".claim_type_summary\", ",
+                "    sql_query = \"select * from \" & database_name & \".\" & schema_prepend & \".claim_type_summary\", ",
                 "    DatabaseConnection = data_warehouse_type_function(data_warehouse_type, sql_query, server_name, database_name, role_name, compute_name),",
                 "",
                 "    Source = if load_data then DatabaseConnection",
