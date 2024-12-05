@@ -36,19 +36,6 @@
         },
         {
           "location": {
-            "x": 1188.2261904761908,
-            "y": 31104.267930002574
-          },
-          "nodeIndex": "Data Sources",
-          "nodeLineageTag": "e6d258db-e726-4cda-8d2a-03c6c6fae6ce",
-          "size": {
-            "height": 104,
-            "width": 234
-          },
-          "zIndex": 5
-        },
-        {
-          "location": {
             "x": 0,
             "y": 30798.818664749597
           },

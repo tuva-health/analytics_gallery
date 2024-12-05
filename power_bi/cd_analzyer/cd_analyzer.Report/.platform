@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "cd_analyzer"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a3bf8a0c-9948-49ee-8235-a1307c876ff3"
+  }
+}

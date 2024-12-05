@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"data_warehouse_type\",\"database_name\",\"server_name\",\"compute_name\",\"role_name\",\"load_data\",\"schema_prepend_name\",\"data_warehouse_type_function\",\"DQI Data Quality for PBI\",\"DQI Summary\",\"DQI Crosswalk Mart to Outcome Measure\",\"DQI Crosswalk Field to Mart SK\",\"DQI quality_trend\",\"DQI claim_type_summary\",\"Data Sources\"]"
+        "value": "[\"data_warehouse_type\",\"database_name\",\"server_name\",\"compute_name\",\"role_name\",\"load_data\",\"schema_prepend_name\",\"data_warehouse_type_function\",\"DQI Data Quality for PBI\",\"DQI Summary\",\"DQI Crosswalk Mart to Outcome Measure\",\"DQI Crosswalk Field to Mart SK\",\"DQI quality_trend\",\"DQI claim_type_summary\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.137.1102.0 (24.10)"
+        "value": "2.138.1203.0 (24.11)"
       },
       {
         "name": "PBI_ProTooling",
@@ -2544,262 +2544,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.727
-                    }
-                  }
-                ]
-              },
-              "data_source": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Data Sources"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "data source": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "source": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "data origin": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "data resource": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "data src": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "database source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "information source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "fact source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "info source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "statistic source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "document source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "figure source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ]
-              },
-              "data_source.data_source": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Data Sources",
-                    "ConceptualProperty": "DATA_SOURCE"
-                  }
-                },
-                "NameType": "Name",
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "data source": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "data source name": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "DATA_SOURCE": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "source": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "data origin": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "data resource": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "data src": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "database source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "information source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "fact source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "info source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "statistic source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "document source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "figure source": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
                     }
                   }
                 ]
@@ -8822,52 +8566,6 @@
                 },
                 "State": "Generated"
               },
-              "data_source_has_data_source": {
-                "Binding": {
-                  "ConceptualEntity": "Data Sources"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "data_source.data_source"
-                      },
-                      "Subject": {
-                        "Role": "data_source"
-                      }
-                    },
-                    "ID": "data_sources_have_data_sources",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "ID": "data_sources_are_names_IDs_of_data_sources",
-                    "Name": {
-                      "Name": {
-                        "Role": "data_source.data_source"
-                      },
-                      "Subject": {
-                        "Role": "data_source"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "data_source": {
-                    "Target": {
-                      "Entity": "data_source"
-                    }
-                  },
-                  "data_source.data_source": {
-                    "Target": {
-                      "Entity": "data_source.data_source"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "date_table_has_date": {
                 "Binding": {
                   "ConceptualEntity": "DateTable"
@@ -10886,7 +10584,7 @@
             "value": "Navigation"
           }
         ],
-        "expression": "\"database\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "expression": "\"db\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
         "kind": "m",
         "lineageTag": "4d63fe9a-ef00-4b08-b015-95c286f1292c"
       },
@@ -10983,42 +10681,42 @@
           }
         ],
         "expression": [
-          "let",
-          "    ConnectToDatabase = (data_warehouse_type as text, sql_query as text, server_name as text, database_name as text, optional role_name as nullable text, optional compute_name as nullable text) =>",
-          "    let",
-          "        ConnectionString = if data_warehouse_type = \"ODBC\" then \"dsn=\" & server_name else null,",
-          "        DatabaseConnection = if data_warehouse_type = \"snowflake\" then ",
-          "            Snowflake.Databases(",
-          "                server_name,",
-          "                compute_name,",
-          "                [Role=role_name]",
-          "            ){[Name=database_name]}[Data]",
-          "        else if data_warehouse_type = \"SQLServer\" then",
-          "            Sql.Databases(",
-          "                server_name",
-          "            ){[Name=database_name]}[Data]",
-          "        else if data_warehouse_type = \"ODBC\" then ",
-          "            ConnectionString",
-          "        else if data_warehouse_type = \"Fabric\" then",
-          "            Sql.Database(",
-          "                server_name & \".datawarehouse.fabric.microsoft.com\",",
-          "                database_name,",
-          "                [Query=sql_query]",
-          "            )",
-          "        else",
-          "            error \"Unsupported database type. Supported types: Snowflake, SQLServer, ODBC, Fabric\",",
-          "",
-          "        Source = if data_warehouse_type = \"ODBC\" then",
-          "            Odbc.Query(ConnectionString, sql_query)",
-          "        else if data_warehouse_type = \"snowflake\" then",
-          "            Value.NativeQuery(DatabaseConnection, sql_query, null, [EnableFolding=true])",
-          "        else if data_warehouse_type = \"Fabric\" then",
-          "            DatabaseConnection",
-          "        else",
-          "            DatabaseConnection",
-          "    in",
-          "        Source",
-          "in",
+          "let\r",
+          "    ConnectToDatabase = (data_warehouse_type as text, sql_query as text, server_name as text, database_name as text, optional role_name as nullable text, optional compute_name as nullable text) =>\r",
+          "    let\r",
+          "        ConnectionString = if data_warehouse_type = \"ODBC\" then \"dsn=\" & server_name else null,\r",
+          "        DatabaseConnection = if data_warehouse_type = \"snowflake\" then \r",
+          "            Snowflake.Databases(\r",
+          "                server_name,\r",
+          "                compute_name,\r",
+          "                [Role=role_name]\r",
+          "            ){[Name=database_name]}[Data]\r",
+          "        else if data_warehouse_type = \"SQLServer\" then\r",
+          "            Sql.Databases(\r",
+          "                server_name\r",
+          "            ){[Name=database_name]}[Data]\r",
+          "        else if data_warehouse_type = \"ODBC\" then \r",
+          "            ConnectionString\r",
+          "        else if data_warehouse_type = \"Fabric\" then\r",
+          "            Sql.Database(\r",
+          "                server_name & \".datawarehouse.fabric.microsoft.com\",\r",
+          "                database_name,\r",
+          "                [Query=sql_query]\r",
+          "            )\r",
+          "        else\r",
+          "            error \"Unsupported database type. Supported types: Snowflake, SQLServer, ODBC, Fabric\",\r",
+          "\r",
+          "        Source = if data_warehouse_type = \"ODBC\" then\r",
+          "            Odbc.Query(ConnectionString, sql_query)\r",
+          "        else if data_warehouse_type = \"snowflake\" then\r",
+          "            Value.NativeQuery(DatabaseConnection, sql_query, null, [EnableFolding=true])\r",
+          "        else if data_warehouse_type = \"Fabric\" then\r",
+          "            DatabaseConnection\r",
+          "        else\r",
+          "            DatabaseConnection\r",
+          "    in\r",
+          "        Source\r",
+          "in\r",
           "    ConnectToDatabase"
         ],
         "kind": "m",
@@ -11618,7 +11316,7 @@
         "annotations": [
           {
             "name": "PBI_ResultType",
-            "value": "Exception"
+            "value": "Table"
           },
           {
             "name": "PBI_NavigationStepName",
@@ -12071,7 +11769,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "cbed2521-d657-472b-9f89-5847d5a67836",
+            "lineageTag": "f99ed78c-d55b-4e62-8c95-bb5977206654",
             "sourceColumn": "SOURCE_DATE",
             "summarizeBy": "none"
           }
@@ -12114,7 +11812,7 @@
         "annotations": [
           {
             "name": "PBI_ResultType",
-            "value": "Exception"
+            "value": "Table"
           },
           {
             "name": "PBI_NavigationStepName",
@@ -12191,66 +11889,6 @@
                 "",
                 "    Source = if load_data then DatabaseConnection",
                 "    else #table({\"DATA_SOURCE\",\"CLAIM_TYPE\",\"CLAIM_COUNT\",\"PAID_AMOUNT\"}, {}),",
-                "",
-                "    // Rename columns to uppercase",
-                "    RenamedColumns = ",
-                "        let",
-                "            ColumnNames = Table.ColumnNames(Source),",
-                "            UppercaseNames = List.Transform(ColumnNames, each {_, Text.Upper(_)}),",
-                "            Renamed = Table.RenameColumns(Source, UppercaseNames)",
-                "        in",
-                "            Renamed",
-                "in",
-                "    RenamedColumns"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Data Sources",
-        "annotations": [
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          }
-        ],
-        "columns": [
-          {
-            "name": "DATA_SOURCE",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1c9e9808-dfcb-43ca-9c2a-cb273d7be0df",
-            "sourceColumn": "DATA_SOURCE",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "e6d258db-e726-4cda-8d2a-03c6c6fae6ce",
-        "partitions": [
-          {
-            "name": "Data Sources",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    schema_input = \"data_quality\",",
-                "    schema_prepend = if schema_prepend_name = \"NULL\" then schema_input",
-                "                     else \"\"\"\" & schema_prepend_name & \"data_quality\" & \"\"\"\" ,",
-                "    sql_query = \"SELECT * FROM \" & database_name & \".\" & schema_prepend & \".mart_review__data_source\", ",
-                "    DatabaseConnection = data_warehouse_type_function(data_warehouse_type, sql_query, server_name, database_name, role_name, compute_name),",
-                "",
-                "    Source = if load_data then DatabaseConnection",
-                "    else #table({\"DATA_SOURCE\"}, {}),",
                 "",
                 "    // Rename columns to uppercase",
                 "    RenamedColumns = ",
